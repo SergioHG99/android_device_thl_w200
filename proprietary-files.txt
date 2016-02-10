@@ -1,0 +1,28 @@
+#VENDOR/BIN
+vendor/bin/pvrsvctl
+vendor/bin/rc.fat
+
+#VENDOR/LIB
+vendor/lib/libBLPP.so
+vendor/lib/libglslcompiler.so
+vendor/lib/libIMGegl.so
+vendor/lib/libpvr2d.so
+vendor/lib/libpvrANDROID_WSEGL.so
+vendor/lib/libPVRScopeServices.so
+vendor/lib/libsrv_init.so
+vendor/lib/libsrv_um.so
+vendor/lib/libusc.so
+vendor/lib/libwvdrm_L3.so
+vendor/lib/libwvm.so
+vendor/lib/libWVStreamControlAPI_L3.so
+
+#VIDEO DRM
+vendor/lib/drm/libdrmwvmplugin.so
+
+#VIDEO EGL
+vendor/lib/egl/libEGL_mtk.so
+vendor/lib/egl/libGLESv1_CM_mtk.so
+vendor/lib/egl/libGLESv2_mtk.so
+
+#LIB HW
+vendor/lib/hw/gralloc.mt6589.so
