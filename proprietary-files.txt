@@ -1,8 +1,12 @@
-#VENDOR/BIN
+##########
+# VENDOR #
+##########
+
+#VENDOR/BIN/*
 vendor/bin/pvrsvctl
 vendor/bin/rc.fat
 
-#VENDOR/LIB
+#VENDOR/LIB/*
 vendor/lib/libBLPP.so
 vendor/lib/libglslcompiler.so
 vendor/lib/libIMGegl.so
@@ -16,13 +20,40 @@ vendor/lib/libwvdrm_L3.so
 vendor/lib/libwvm.so
 vendor/lib/libWVStreamControlAPI_L3.so
 
-#VIDEO DRM
+#VIDEO DRM/*
 vendor/lib/drm/libdrmwvmplugin.so
 
-#VIDEO EGL
+#VIDEO EGL/*
 vendor/lib/egl/libEGL_mtk.so
 vendor/lib/egl/libGLESv1_CM_mtk.so
 vendor/lib/egl/libGLESv2_mtk.so
 
-#LIB HW
+#LIB HW/*
 vendor/lib/hw/gralloc.mt6589.so
+
+############
+# FIRMWARE #
+############
+
+#FIRMWARE/*
+etc/firmware/catcher_filter.bin
+etc/firmware/mt6628_ant_m1.cfg
+etc/firmware/mt6628_patch_e1_hdr.bin
+etc/firmware/mt6628_patch_e2_0_hdr.bin
+etc/firmware/mt6628_patch_e2_1_hdr.bin
+etc/firmware/S_ANDRO_SFL.ini
+etc/firmware/WMT.cfg
+
+#MT6628/*
+etc/firmware/mt6628_fm_rom.bin
+etc/firmware/mt6628_fm_v1_coeff.bin
+etc/firmware/mt6628_fm_v1_patch.bi
+etc/firmware/mt6628_fm_v2_coeff.bin
+etc/firmware/mt6628_fm_v2_patch.bin
+etc/firmware/mt6628_fm_v3_coeff.bin
+etc/firmware/mt6628_fm_v3_patch.bin
+etc/firmware/mt6628_fm_v4_coeff.bin
+etc/firmware/mt6628_fm_v4_patch.bin
+etc/firmware/mt6628_fm_v5_coeff.bin
+etc/firmware/mt6628_fm_v5_patch.bin
+
