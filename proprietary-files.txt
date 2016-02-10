@@ -2,11 +2,11 @@
 # VENDOR #
 ##########
 
-#VENDOR/BIN/*
+#BIN/*
 vendor/bin/pvrsvctl
 vendor/bin/rc.fat
 
-#VENDOR/LIB/*
+#LIB/*
 vendor/lib/libBLPP.so
 vendor/lib/libglslcompiler.so
 vendor/lib/libIMGegl.so
@@ -28,7 +28,7 @@ vendor/lib/egl/libEGL_mtk.so
 vendor/lib/egl/libGLESv1_CM_mtk.so
 vendor/lib/egl/libGLESv2_mtk.so
 
-#LIB HW/*
+#HW/*
 vendor/lib/hw/gralloc.mt6589.so
 
 ############
@@ -57,3 +57,54 @@ etc/firmware/mt6628_fm_v4_patch.bin
 etc/firmware/mt6628_fm_v5_coeff.bin
 etc/firmware/mt6628_fm_v5_patch.bin
 
+############
+#    BIN   #
+############
+
+#/-*
+bin/mtkbt
+bin/mtkGD
+bin/mtk_agpsd
+bin/fsck_msdos_mtk
+bin/dbus-daemon
+bin/nvram_daemon
+bin/thermal
+bin/thermal_manager
+
+############
+#    LIB   #
+############
+
+#LIB/ -*
+lib/libcameracustom.so
+lib/libcamera_client.so
+lib/libcameraservice.so
+lib/libcam_camera_exif.so
+lib/libcamera_metadata.so
+lib/libRSDriver.so
+lib/libdrm1.so
+lib/libdrm1_jni.so
+lib/libdrmmtkutil.so
+lib/libdrmframework.so
+lib/libdrmmtkwhitelist.so
+lib/libdrmframework_jni.so
+lib/libdrmmtkplugin.so
+
+#HW/*
+lib/hw/audio.primary.default.so
+lib/hw/audio_policy.default.so
+lib/hw/audio_policy.stub.so
+lib/hw/camera.default.so
+lib/hw/gps.default.so
+lib/hw/gralloc.default.so
+lib/hw/hwcomposer.mt6589.so
+lib/hw/keystore.default.so
+lib/hw/libaudio.r_submix.default.so
+lib/hw/libaudio.usb.default.so
+lib/hw/lights.default.so
+lib/hw/local_time.default.so
+lib/hw/power.default.so
+lib/hw/sensors.default.so
+
+#DRM/*
+lib/drm/libdrmmtkplugin.so
