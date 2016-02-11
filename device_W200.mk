@@ -3,9 +3,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
-$(call inherit-product-if-exists, vendor/ThL/W200/W200-vendor.mk)
+#$(call inherit-product-if-exists, vendor/ThL/W200/W200-vendor.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/ThL/W200/overlay
+#DEVICE_PACKAGE_OVERLAYS += device/ThL/W200/overlay
 
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
