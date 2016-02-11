@@ -8,7 +8,7 @@ USE_CAMERA_STUB := true
 #TARGET_RELEASETOOLS_EXTENSIONS := device/faea/HY509_V2_0
 
 #include vendor/faea/HY509_V2_0/BoardConfigVendor.mk
-include device/ThL/W200/BoardConfigCommon.mk
+#include device/ThL/W200/BoardConfigCommon.mk
 
 TARGET_RECOVERY_FSTAB = device/ThL/W200/recovery.fstab
 
