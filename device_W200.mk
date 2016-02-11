@@ -8,11 +8,11 @@ $(call inherit-product-if-exists, vendor/ThL/W200/W200-vendor.mk)
 DEVICE_PACKAGE_OVERLAYS += device/ThL/W200/overlay
 
 
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-	LOCAL_KERNEL := kernel/ThL/W200/kernel
-else
-	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
+#ifeq ($(TARGET_PREBUILT_KERNEL),)
+#	LOCAL_KERNEL := kernel/ThL/W200/kernel
+#else
+#	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+#endif
 
 unique_product_copy_files_pairs :=
 unique_product_copy_files_destinations :=
@@ -32,8 +32,8 @@ $(foreach cf,$(unique_product_copy_files_pairs), \
         $(eval ALL_DEFAULT_INSTALLED_MODULES += $(_fulldest)) \
         $(eval unique_product_copy_files_destinations += $(_dest))))
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_KERNEL):kernel
 
 $(call inherit-product, build/target/product/full.mk)
 
