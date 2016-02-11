@@ -9,7 +9,7 @@ DEVICE_PACKAGE_OVERLAYS += device/ThL/W200/overlay
 
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-	LOCAL_KERNEL := kernel/ThL/W200/kernel
+	LOCAL_KERNEL := kernel/ThL/kernel
 else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
