@@ -7,7 +7,7 @@ USE_CAMERA_STUB := true
 
 #TARGET_RELEASETOOLS_EXTENSIONS := device/faea/HY509_V2_0
 
-#include vendor/faea/HY509_V2_0/BoardConfigVendor.mk
+include vendor/ThL/W200/BoardConfigVendor.mk
 #include device/ThL/W200/BoardConfigCommon.mk
 
 TARGET_RECOVERY_FSTAB = device/ThL/W200/recovery.fstab
@@ -58,10 +58,9 @@ BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := false
 
 USE_OPENGL_RENDERER := true
-BOARD_EGL_WORKAROUND_BUG_10194508 := true
+#BOARD_EGL_WORKAROUND_BUG_10194508 := true
 #TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
 #BOARD_EGL_CFG := device/faea/HY509_V2_0/egl.cfg
 
 TARGET_PREBUILT_KERNEL := kernel/ThL/kernel
-TARGET_KERNEL_CONFIG := kernel/ThL/mediatek/custom/arima89_we_s_jb2
-MTK_ROOT_CUSTOM= kernel/Thl/mediatek/custom/
+#TARGET_KERNEL_CONFIG := kernel/ThL/mediatek/custom/arima89_we_s_jb2
