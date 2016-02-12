@@ -63,3 +63,5 @@ BOARD_EGL_WORKAROUND_BUG_10194508 := true
 #BOARD_EGL_CFG := device/faea/HY509_V2_0/egl.cfg
 
 TARGET_PREBUILT_KERNEL := kernel/ThL/kernel
+TARGET_KERNEL_CONFIG := kernel/ThL/mediatek/custom/arima89_we_s_jb2
+MTK_ROOT_CUSTOM=kernel/Thl/mediatek/custom/
