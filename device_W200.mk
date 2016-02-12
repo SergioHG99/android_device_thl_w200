@@ -7,33 +7,11 @@ $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
 #DEVICE_PACKAGE_OVERLAYS += device/ThL/W200/overlay
 
-
-#ifeq ($(TARGET_PREBUILT_KERNEL),)
-#	LOCAL_KERNEL := kernel/ThL/kernel
-#else
-#	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-#endif
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel
-
-unique_product_copy_files_pairs :=
-unique_product_copy_files_destinations :=
-unique_product_copy_files_pairs := \
-$(foreach cf,$(PRODUCT_COPY_FILES), \
-    $(if $(filter $(unique_product_copy_files_pairs),$(cf)),,\
-        $(eval unique_product_copy_files_pairs += $(cf)))) \
-$(foreach cf,$(unique_product_copy_files_pairs), \
-    $(eval _src := $(call word-colon,1,$(cf))) \
-    $(eval _dest := $(call word-colon,2,$(cf))) \
-    $(if $(filter $(unique_product_copy_files_destinations),$(_dest)), \
-        $(info PRODUCT_COPY_FILES $(cf) ignored.), \
-        $(eval _fulldest := $(call append-path,$(PRODUCT_OUT),$(_dest))) \
-        $(if $(filter %.xml,$(_dest)),\
-            $(eval $(call copy-xml-file-checked,$(_src),$(_fulldest))), \
-            $(eval $(call copy-one-file,$(_src),$(_fulldest)))) \
-        $(eval ALL_DEFAULT_INSTALLED_MODULES += $(_fulldest)) \
-        $(eval unique_product_copy_files_destinations += $(_dest))))
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+	LOCAL_KERNEL := kernel/ThL/kernel
+else
+	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+endif
 
 
 $(call inherit-product, build/target/product/full.mk)
