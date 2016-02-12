@@ -26,13 +26,13 @@ int device_handle_key(int key_code, int visible) {
             case KEY_VOLUMEUP:
                 return HIGHLIGHT_UP;
 
-            case KEY_POWER:
-                if (ui_get_showing_back_button()) {
-                    return SELECT_ITEM;
-                }
-                if (!get_allow_toggle_display() && !ui_root_menu) {
-                    return GO_BACK;
-                }
+            #case KEY_POWER:
+            #    if (ui_get_showing_back_button()) {
+            #        return SELECT_ITEM;
+            #    }
+            #    if (!get_allow_toggle_display() && !ui_root_menu) {
+            #        return GO_BACK;
+            #    }
                 break;
             case KEY_HOME:
                 return SELECT_ITEM;
