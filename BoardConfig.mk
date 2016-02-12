@@ -10,7 +10,7 @@ USE_CAMERA_STUB := true
 include vendor/ThL/W200/BoardConfigVendor.mk
 #include device/ThL/W200/BoardConfigCommon.mk
 
-TARGET_RECOVERY_FSTAB = device/ThL/W200/recovery.fstab
+TARGET_RECOVERY_FSTAB = device/ThL/W200/recovery/recovery.fstab
 
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := true
 
