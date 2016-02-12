@@ -35,7 +35,7 @@ vendor/lib/hw/gralloc.mt6589.so
 # FIRMWARE #
 ############
 
-#FIRMWARE/*
+#/*
 etc/firmware/catcher_filter.bin
 etc/firmware/mt6628_ant_m1.cfg
 etc/firmware/mt6628_patch_e1_hdr.bin
@@ -261,7 +261,7 @@ bin/xlog
 #    LIB   #
 ############
 
-#LIB/*
+#/*
 lib/crtbegin_so.o
 lib/crtend_so.o
 lib/lib3a.so
