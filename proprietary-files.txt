@@ -387,5 +387,5 @@ lib/soundfx/libdownmix.so
 lib/soundfx/libreverbwrapper.so
 lib/soundfx/libvisualizer.so
 
-#SSL
+#SSL/*
 lib/ssl/engines/libkeystore.so
