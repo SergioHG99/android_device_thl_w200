@@ -5,6 +5,7 @@
 /misc		emmc	/dev/misc
 /nvram		emmc	/dev/nvram					flags=display="Nvram";backup=1
 /recovery	emmc	/dev/recovery
+/uboot emmc /dev/uboot
 /system		ext4	/dev/block/mmcblk0p5
 /cache		ext4	/dev/block/mmcblk0p6
 /data		ext4	/dev/block/mmcblk0p7
