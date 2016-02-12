@@ -3,6 +3,8 @@ USE_CAMERA_STUB := true
 # inherit from the proprietary version
 #include vendor/ThL/W200/BoardConfigVendor.mk
 
+LOCAL_PATH := device/ThL/W200
+
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
 TARGET_BOARD_PLATFORM := mt6589
