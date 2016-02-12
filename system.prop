@@ -4,10 +4,8 @@
 
 # begin mediatek build properties
 PRODUCT_PROPERTY_OVERRIDES += \
-ro.mediatek.version.release=ThL.W200.130815.JBV2.HD.EN.COM.8P64_MT6589T \
 ro.mediatek.platform=MT6589 \
 ro.mediatek.chip_ver=S01 \
-ro.mediatek.version.branch=ALPS.JB2.MP.V1.2 \
 ro.mediatek.version.sdk=1
 # end mediatek build properties
 #
