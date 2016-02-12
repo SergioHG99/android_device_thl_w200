@@ -45,17 +45,17 @@ etc/firmware/S_ANDRO_SFL.ini
 etc/firmware/WMT.cfg
 
 #MT6628/*
-etc/firmware/mt6628_fm_rom.bin
-etc/firmware/mt6628_fm_v1_coeff.bin
-etc/firmware/mt6628_fm_v1_patch.bi
-etc/firmware/mt6628_fm_v2_coeff.bin
-etc/firmware/mt6628_fm_v2_patch.bin
-etc/firmware/mt6628_fm_v3_coeff.bin
-etc/firmware/mt6628_fm_v3_patch.bin
-etc/firmware/mt6628_fm_v4_coeff.bin
-etc/firmware/mt6628_fm_v4_patch.bin
-etc/firmware/mt6628_fm_v5_coeff.bin
-etc/firmware/mt6628_fm_v5_patch.bin
+etc/firmware/mt6628/mt6628_fm_rom.bin
+etc/firmware/mt6628/mt6628_fm_v1_coeff.bin
+etc/firmware/mt6628/mt6628_fm_v1_patch.bi
+etc/firmware/mt6628/mt6628_fm_v2_coeff.bin
+etc/firmware/mt6628/mt6628_fm_v2_patch.bin
+etc/firmware/mt6628/mt6628_fm_v3_coeff.bin
+etc/firmware/mt6628/mt6628_fm_v3_patch.bin
+etc/firmware/mt6628/mt6628_fm_v4_coeff.bin
+etc/firmware/mt6628/mt6628_fm_v4_patch.bin
+etc/firmware/mt6628/mt6628_fm_v5_coeff.bin
+etc/firmware/mt6628/mt6628_fm_v5_patch.bin
 
 ############
 #    BIN   #
