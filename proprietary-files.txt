@@ -304,6 +304,14 @@ lib/libbtpcm.so
 lib/libbtsniff.so
 lib/libbwc.so
 lib/libcamalgo.so
+lib/libcam.camadapter.so
+lib/libcam_camera_exif.so
+lib/libcam.campipe.so
+lib/libcam.camshot.so
+lib/libcam.client.so
+lib/libcamdrv.so
+lib/libcamera_client.so
+lib/libcameracustom.so
 lib/
 lib/
 lib/
@@ -312,7 +320,8 @@ lib/
 lib/
 lib/
 lib/
-
+lib/
+lib/lib/
 lib/libcameracustom.so
 lib/libcamera_client.so
 lib/libcameraservice.so
