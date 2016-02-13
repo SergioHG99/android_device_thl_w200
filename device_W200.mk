@@ -8,7 +8,7 @@ $(call inherit-product, device/common/gps/gps_us_supl.mk)
 #DEVICE_PACKAGE_OVERLAYS += device/ThL/W200/overlay
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-	LOCAL_KERNEL := kernel/ThL/kernel
+	LOCAL_KERNEL := device/ThL/W200/kernel
 else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
