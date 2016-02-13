@@ -26,8 +26,7 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 # Recovery
 RECOVERY_NAME := ThL W200 CWM-based Recovery
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/recovery.fstab
-TARGET_RECOVERY_INITRC := $(LOCAL_PATH)/recovery/recovery.rc
-#BOARD_CUSTOM_RECOVERY_KEYMAPPING := $(LOCAL_PATH)/recovery/recovery_keys.c
+TARGET_RECOVERY_INITRC := $(LOCAL_PATH)/recovery/init.rc
 CWM_EMMC_BOOT_DEVICE_NAME := /dev/bootimg
 CWM_EMMC_BOOT_DEVICE_SIZE := 0x00600000
 CWM_EMMC_RECOVERY_DEVICE_NAME := /dev/recovery
