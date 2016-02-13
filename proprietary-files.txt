@@ -453,8 +453,8 @@ lib/libsoundpool.so
 lib/libextavrcp_jni.so             
 lib/libsparse.so
 lib/libextavrcp.so                 
-lib/libspeech_enh_lib
-lib//lib.so
+lib/libspeech_enh_lib.so
+lib/lib.so
 lib/libextbip_jni.so               
 lib/libspeexresampler.so
 lib/libextbip.so                   
