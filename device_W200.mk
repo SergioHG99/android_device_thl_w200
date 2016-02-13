@@ -13,6 +13,8 @@ else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_KERNEL):kernel
 
 $(call inherit-product, build/target/product/full.mk)
 
