@@ -1,11 +1,11 @@
 LOCAL_PATH := device/ThL/W200
+
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
 include vendor/ThL/W200/BoardConfigVendor.mk
 
 TARGET_ARCH := arm
-TARGET_NO_BOOTLOADER := true
 TARGET_BOARD_PLATFORM := mt6589
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
@@ -14,8 +14,7 @@ TARGET_CPU_VARIANT := cortex-a7
 ARCH_ARM_HAVE_TLS_REGISTER := true
 
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
-TARGET_KERNEL_CONFIG := 
-BOARD_KERNEL_CMDLINE := console=null
+TARGET_KERNEL_CMDLINE := 
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
 
