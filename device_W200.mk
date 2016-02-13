@@ -5,16 +5,20 @@ $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
 #$(call inherit-product-if-exists, vendor/ThL/W200/W200-vendor.mk)
 
-#DEVICE_PACKAGE_OVERLAYS += device/ThL/W200/overlay
+DEVICE_PACKAGE_OVERLAYS += device/ThL/W200/overlay
+
+LOCAL_PATH := device/ThL/W200
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-	LOCAL_KERNEL := device/ThL/W200/kernel
+	LOCAL_KERNEL := $(LOCAL_PATH)/kernel
 else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel
+    $(LOCAL_KERNEL):kernel \
+    $(LOCAL_KERNEL)/recovery/recovery.fstab:recovery/root/etc/recovery.fstab \
+    $(LOCAL_KERNEL)/recovery/recovery.fstab:recovery/root/etc/recovery.rc
 
 $(call inherit-product, build/target/product/full.mk)
 
