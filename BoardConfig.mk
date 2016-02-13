@@ -1,9 +1,8 @@
+LOCAL_PATH := device/ThL/W200
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
 #include vendor/ThL/W200/BoardConfigVendor.mk
-
-LOCAL_PATH := device/ThL/W200
 
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
@@ -14,7 +13,7 @@ TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := cortex-a7
 ARCH_ARM_HAVE_TLS_REGISTER := true
 
-TARGET_PREBUILT_KERNEL := device/ThL/W200/kernel
+TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
 BOARD_KERNEL_CMDLINE := 
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
@@ -25,9 +24,9 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 
 # Recovery
 RECOVERY_NAME := ThL W200 CWM-based Recovery
-TARGET_RECOVERY_FSTAB := device/ThL/W200/recovery/recovery.fstab
-TARGET_RECOVERY_INITRC := device/ThL/W200/recovery/recovery.rc
-#BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/ThL/W200/recovery/recovery_keys.c
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/recovery.fstab
+TARGET_RECOVERY_INITRC := $(LOCAL_PATH)/recovery/recovery.rc
+#BOARD_CUSTOM_RECOVERY_KEYMAPPING := $(LOCAL_PATH)/recovery/recovery_keys.c
 CWM_EMMC_BOOT_DEVICE_NAME := /dev/bootimg
 CWM_EMMC_BOOT_DEVICE_SIZE := 0x00600000
 CWM_EMMC_RECOVERY_DEVICE_NAME := /dev/recovery
