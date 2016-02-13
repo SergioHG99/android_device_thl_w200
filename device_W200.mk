@@ -18,7 +18,7 @@ endif
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel \
     $(LOCAL_KERNEL)/recovery/recovery.fstab:recovery/root/etc/recovery.fstab \
-    $(LOCAL_KERNEL)/recovery/recovery.rc:recovery/root/etc/recovery.rc
+    $(LOCAL_KERNEL)/recovery/init.rc:recovery/root/etc/init.rc
 
 $(call inherit-product, build/target/product/full.mk)
 
