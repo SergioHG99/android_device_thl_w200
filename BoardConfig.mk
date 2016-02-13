@@ -2,7 +2,7 @@ LOCAL_PATH := device/ThL/W200
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
-#include vendor/ThL/W200/BoardConfigVendor.mk
+include vendor/ThL/W200/BoardConfigVendor.mk
 
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
