@@ -3,8 +3,8 @@
 ##########
 
 #BIN/*
-vendor/bin/pvrsvctl
-vendor/bin/rc.fat
+vendor/bin/pvrsrvctl
+vendor/bin/rc.fac
 
 #LIB/*
 vendor/lib/libBLPP.so
