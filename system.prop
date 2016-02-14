@@ -3,126 +3,108 @@
 #
 
 # begin mediatek build properties
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.mediatek.platform=MT6589 \
-ro.mediatek.chip_ver=S01 \
+ro.mediatek.platform=MT6589
+ro.mediatek.chip_ver=S01
 ro.mediatek.version.sdk=1
 # end mediatek build properties
+
 #
 # system.prop for generic sdk
 #
-PRODUCT_PROPERTY_OVERRIDES += \
-rild.libpath=/system/lib/mtk-ril.so  \
+
+rild.libpath=/system/lib/mtk-ril.so
 rild.libargs=-d /dev/ttyC0
 
 
 # MTK, Infinity, 20090720 {
-PRODUCT_PROPERTY_OVERRIDES += \
 wifi.interface=wlan0
 # MTK, Infinity, 20090720 }
 
 # MTK, mtk03034, 20101210 {
-PRODUCT_PROPERTY_OVERRIDES += \
 ro.mediatek.wlan.wsc=1
 # MTK, mtk03034 20101210}
 # MTK, mtk03034, 20110318 {
-PRODUCT_PROPERTY_OVERRIDES += \
 ro.mediatek.wlan.p2p=1
 # MTK, mtk03034 20110318}
 
 # MTK, mtk03034, 20101213 {
-PRODUCT_PROPERTY_OVERRIDES += \
 mediatek.wlan.ctia=0
 # MTK, mtk03034 20101213}
 
 
 #
-PRODUCT_PROPERTY_OVERRIDES += \
 wifi.tethering.interface=ap0
 #
-PRODUCT_PROPERTY_OVERRIDES += \
+
 ro.opengles.version=131072
-PRODUCT_PROPERTY_OVERRIDES += \
+
 wifi.direct.interface=p2p0
-dalvik.vm.heapgrowthlimit=128m  \
-dalvik.vm.heapsize=256m
+dalvik.vm.heapstartsize=8m
+dalvik.vm.heapgrowthlimit=256m
+dalvik.vm.heapsize=512m
+dalvik.vm.heaptargetutilization=0.75
+dalvik.vm.heapminfree=2m
+dalvik.vm.heapmaxfree=8m
 
 # USB MTP WHQL
-PRODUCT_PROPERTY_OVERRIDES += \
 ro.sys.usb.mtp.whql.enable=0
 
 # Power off opt in IPO
-PRODUCT_PROPERTY_OVERRIDES += \
 sys.ipo.pwrdncap=2
-PRODUCT_PROPERTY_OVERRIDES += \
+
 ro.sys.usb.storage.type=mtp,mass_storage
 
 # USB BICR function
-PRODUCT_PROPERTY_OVERRIDES += \
 ro.sys.usb.bicr=yes
 
 # USB Charge only function
-PRODUCT_PROPERTY_OVERRIDES += \
 ro.sys.usb.charging.only=yes
 
 # audio
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.camera.sound.forced=0 \
-ro.audio.silent=0 \
-PRODUCT_PROPERTY_OVERRIDES += \
+ro.camera.sound.forced=0
+ro.audio.silent=0
+
 ro.zygote.preload.enable=0
 
+ro.rommanager.developerid=cyanogenmod
+ro.com.google.clientidbase=android-google
+ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html
+ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html
+ro.build.selinux=1
+media.aac_51_output_enabled=true
 #
 # ADDITIONAL_BUILD_PROPERTIES
 #
-PRODUCT_PROPERTY_OVERRIDES += \
-bird.updatezip.code=BIRD  \
-ril.specific.sm_cause=0  \
-gps.solution.combo.chip=1  \
-ril.external.md=0  \
-fmradio.driver.chip=3  \
-ro.sf.hwrotation=0  \
-ril.current.share_modem=2 \
-launcherplus.allappsgrid=2d  \
-launcher2.allappsgrid=3d_20  \
-curlockscreen=1  \
-ro.mediatek.gemini_support=true  \
-persist.radio.fd.counter=15  \
-persist.radio.fd.off.counter=5  \
-persist.radio.fd.r8.counter=15  \
-persist.radio.fd.off.r8.counter=5  \
-persist.mtk.wcn.combo.chipid=-1  \
-drm.service.enabled=true  \
-fmradio.driver.enable=1  \
-ril.first.md=1  \
-ril.flightmode.poweroffMD=1  \
-ril.telephony.mode=1  \
-ril.radiooff.poweroffMD=0  \
-ro.tool.btname=W200  \
-dalvik.vm.mtk-stack-trace-file=/data/anr/mtk_traces.txt  \
-mediatek.wlan.chip=MT6628  \
-mediatek.wlan.module.postfix=_mt6628  \
-ro.bird.statusbar.transparent=true  \
-ro.bird.statusbar.alpha=178  \
-ro.tool.specialfactoryreset=yes  \
-ro.facelock.support=true  \
-bird_default_font_size=extralarge  \
-bird_input_method_by_language=true  \
-ro.lockscr.vibrate.value=40  \
-ro.vikey.vibrate.value=0;30;40;50  \
-ro.longpress.vibrate.value=0;15;20;30  \
-ro.wlan.port.name=ThL  \
-ro.bird.brightness=102  \
-ro.factorytest.headset.ctrl=true  \
-ro.bird.control.naviBar=true  \
-persist.sys.naviBar=false  \
-ro.enable.camera.guide=false  \
-ro.camera.picture.ratio=1.3333  \
-ro.camera.main.capturesize=3264x2448  \
-ro.camera.sub.capturesize=2560x1920  \
-ro.config.notification_sound=OnTheHunt.ogg  \
-ro.config.alarm_alert=Ticktac.ogg  \
-persist.sys.timezone=Asia/Shanghai  \
-ro.config.ringtone=ThL_ringtone.mid  \
-net.bt.name=Android  \
+ril.specific.sm_cause=0
+gps.solution.combo.chip=1
+ril.external.md=0
+fmradio.driver.chip=3
+ro.sf.hwrotation=0
+ril.current.share_modem=2
+launcherplus.allappsgrid=2d
+launcher2.allappsgrid=3d_20
+curlockscreen=1
+ro.mediatek.gemini_support=true
+ro.gemini.smart_3g_switch=0
+persist.radio.fd.counter=15
+persist.radio.fd.off.counter=5
+persist.radio.fd.r8.counter=15
+persist.radio.fd.off.r8.counter=5
+persist.mtk.wcn.combo.chipid=-1
+drm.service.enabled=true
+fmradio.driver.enable=1
+ril.first.md=1
+ril.flightmode.poweroffMD=1
+ril.telephony.mode=1
+ril.radiooff.poweroffMD=0
+dalvik.vm.mtk-stack-trace-file=/data/anr/mtk_traces.txt
+mediatek.wlan.chip=MT6628
+mediatek.wlan.module.postfix=_mt6628
+qemu.hw.mainkeys=1
+ro.init.no_sim_missing_notify=true
+ro.init.auto_time=true
+ro.init.show_keylight_switch=1
+net.bt.name=Android
 dalvik.vm.stack-trace-file=/data/anr/traces.txt
+dalvik.vm.execution-mode=int:fast
+dalvik.vm.execution-mode=init:jit
