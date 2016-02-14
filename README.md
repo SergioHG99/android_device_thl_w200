@@ -17,6 +17,6 @@ Prebuilt :
 
 Get Device Specific Repos:
 
-    . build/envsetup.sh && breakfast rk2918
+    . build/envsetup.sh && breakfast W200
     
 READY TO BUILD!!!
