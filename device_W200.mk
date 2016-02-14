@@ -15,7 +15,7 @@ else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
 
-# Try to make recovery.fstab works in cm10.1
+# Maybe not needed but ensure the copy of the product files
 unique_product_copy_files_pairs :=
 unique_product_copy_files_destinations :=
 unique_product_copy_files_pairs := \
@@ -37,6 +37,7 @@ $(foreach cf,$(unique_product_copy_files_pairs), \
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel \
 #    $(LOCAL_KERNEL)/recovery/recovery.fstab:recovery/root/etc/recovery.fstab \
+# Bottom is not really commented (Github Bug)
      $(LOCAL_KERNEL)/recovery/init.rc:recovery/root/etc/init.rc
 
 $(call inherit-product, build/target/product/full.mk)
