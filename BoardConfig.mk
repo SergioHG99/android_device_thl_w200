@@ -26,6 +26,8 @@ TARGET_NO_BOOTLOADER := true
 BOARD_HAS_NO_SELECT_BUTTON := true
 
 # Recovery
+# Skip recovery installation
+TARGET_NO_SEPARATE_RECOVERY := true
 RECOVERY_NAME := ThL W200 CWM-based Recovery
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/recovery.fstab
 TARGET_RECOVERY_INITRC := $(LOCAL_PATH)/recovery/init.rc
