@@ -3,7 +3,7 @@
 /boot		emmc	/dev/bootimg
 /logo		emmc	/dev/logo					flags=display="Logo";backup=1
 /misc		emmc	/dev/misc
-/nvram		emmc	/dev/nvram					flags=display="Nvram";backup=1
+#/nvram		emmc	/dev/nvram					flags=display="Nvram";backup=1
 /recovery	emmc	/dev/recovery
 /uboot		emmc   /dev/uboot
 /system		ext4	/dev/block/mmcblk0p5
