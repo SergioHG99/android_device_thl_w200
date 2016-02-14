@@ -1,5 +1,5 @@
 # android_device_thl_w200
-It build but not sure yet if it boots maybe a problem with partitions. TESTING...
+It builds but not sure yet if it boots maybe a problem with partitions. TESTING...
 
 -----
 
