@@ -1,6 +1,5 @@
 # android_device_thl_w200
-Tested on cm11 and it says that recovery image is too big 6.8MB of 4.6 ≈
-Tested on cm10.1 and cant build anything (recovery.fstab not found)
+Tested and it says that recovery image is too big 6.8MB of 4.6 ≈
 
 (Only testing in cm11 yet)
 
