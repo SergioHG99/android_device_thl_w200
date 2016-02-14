@@ -9,11 +9,11 @@ DEVICE_PACKAGE_OVERLAYS += device/ThL/W200/overlay
 
 LOCAL_PATH := device/ThL/W200
 
-#ifeq ($(TARGET_PREBUILT_KERNEL),)
-#	LOCAL_KERNEL := $(LOCAL_PATH)/kernel
-#else
-#	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-#endif
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+	LOCAL_KERNEL := $(LOCAL_PATH)/kernel
+else
+	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+endif
 
 # Try to make recovery.fstab works in cm10.1
 unique_product_copy_files_pairs :=
@@ -33,6 +33,11 @@ $(foreach cf,$(unique_product_copy_files_pairs), \
             $(eval $(call copy-one-file,$(_src),$(_fulldest)))) \
         $(eval ALL_DEFAULT_INSTALLED_MODULES += $(_fulldest)) \
         $(eval unique_product_copy_files_destinations += $(_dest))))
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_KERNEL):kernel \
+    $(LOCAL_KERNEL)/recovery/recovery.fstab:recovery/root/etc/recovery.fstab \
+    $(LOCAL_KERNEL)/recovery/init.rc:recovery/root/etc/init.rc
 
 $(call inherit-product, build/target/product/full.mk)
 
