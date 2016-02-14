@@ -9,16 +9,30 @@ DEVICE_PACKAGE_OVERLAYS += device/ThL/W200/overlay
 
 LOCAL_PATH := device/ThL/W200
 
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-	LOCAL_KERNEL := $(LOCAL_PATH)/kernel
-else
-	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
+#ifeq ($(TARGET_PREBUILT_KERNEL),)
+#	LOCAL_KERNEL := $(LOCAL_PATH)/kernel
+#else
+#	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+#endif
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel \
-    $(LOCAL_KERNEL)/recovery/recovery.fstab:recovery/root/etc/recovery.fstab \
-    $(LOCAL_KERNEL)/recovery/init.rc:recovery/root/etc/init.rc
+# Try to make recovery.fstab works in cm10.1
+unique_product_copy_files_pairs :=
+unique_product_copy_files_destinations :=
+unique_product_copy_files_pairs := \
+$(foreach cf,$(PRODUCT_COPY_FILES), \
+    $(if $(filter $(unique_product_copy_files_pairs),$(cf)),,\
+        $(eval unique_product_copy_files_pairs += $(cf)))) \
+$(foreach cf,$(unique_product_copy_files_pairs), \
+    $(eval _src := $(call word-colon,1,$(cf))) \
+    $(eval _dest := $(call word-colon,2,$(cf))) \
+    $(if $(filter $(unique_product_copy_files_destinations),$(_dest)), \
+        $(info PRODUCT_COPY_FILES $(cf) ignored.), \
+        $(eval _fulldest := $(call append-path,$(PRODUCT_OUT),$(_dest))) \
+        $(if $(filter %.xml,$(_dest)),\
+            $(eval $(call copy-xml-file-checked,$(_src),$(_fulldest))), \
+            $(eval $(call copy-one-file,$(_src),$(_fulldest)))) \
+        $(eval ALL_DEFAULT_INSTALLED_MODULES += $(_fulldest)) \
+        $(eval unique_product_copy_files_destinations += $(_dest))))
 
 $(call inherit-product, build/target/product/full.mk)
 
