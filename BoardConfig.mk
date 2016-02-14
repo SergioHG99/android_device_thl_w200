@@ -25,7 +25,7 @@ TARGET_NO_BOOTLOADER := true
 
 BOARD_HAS_NO_SELECT_BUTTON := true
 
-# Skip recovery installation
+# Skip recovery installation (error maybe because a bad recovery to install not enought functions)
 TARGET_NO_SEPARATE_RECOVERY := true
 # Recovery
 RECOVERY_NAME := ThL W200 CWM-based Recovery
