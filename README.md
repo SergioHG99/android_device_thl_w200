@@ -1,5 +1,5 @@
 # android_device_thl_w200
-Tested and it says that recovery image is too big 6.8MB of 4.6 ≈
+It build but not sure yet if it boots maybe a problem with partitions. TESTING...
 
 -----
 
@@ -16,5 +16,5 @@ Prebuilt :
 Get Device Specific Repos:
 
     . build/envsetup.sh && breakfast W200
-    
+
 READY TO BUILD!!!
