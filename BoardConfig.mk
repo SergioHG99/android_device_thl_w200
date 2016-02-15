@@ -27,16 +27,12 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 
 # Skip recovery installation (error maybe because a bad recovery to install build; not enought functions)
 #TARGET_NO_SEPARATE_RECOVERY := true
-# Recovery
-RECOVERY_NAME := ThL W200 CWM-based Recovery
+# Recovery (Basic config)
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/recovery.fstab
 TARGET_RECOVERY_INITRC := $(LOCAL_PATH)/recovery/init.rc
-CWM_EMMC_BOOT_DEVICE_NAME := /dev/bootimg
-CWM_EMMC_BOOT_DEVICE_SIZE := 6291456
-CWM_EMMC_RECOVERY_DEVICE_NAME := /dev/recovery
-CWM_EMMC_RECOVERY_DEVICE_SIZE := 10485760
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/mt_usb/gadget/lun%d/file
-BOARD_HAS_LARGE_FILESYSTEM := true
+
+# TWRP Recovery
+
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
