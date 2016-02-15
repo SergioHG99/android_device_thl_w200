@@ -2,6 +2,9 @@
 It builds but not sure yet if it boots maybe a problem with partitions?
 By the moment can't install with CWM automade 08.08.2013 02:33:15, maybe a instalation could be performed on TWRP.
 
+###### STATUS
+I can't build cm10.1 strange error
+
 I can build to cm-10.2
 
 I can build to cm-11
