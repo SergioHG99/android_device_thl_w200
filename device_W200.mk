@@ -40,6 +40,13 @@ PRODUCT_COPY_FILES += \
 # Bottom is not really commented (Github Bug)
      $(LOCAL_KERNEL)/recovery/init.rc:recovery/root/etc/init.rc
 
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
+SCREEN_RATIO_PROPORTIONATE := true
+TARGET_SCREEN_ASPECT_RATIO := 16by9
+
 $(call inherit-product, build/target/product/full.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
