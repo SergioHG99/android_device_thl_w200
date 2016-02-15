@@ -3,9 +3,8 @@
 /dev/bootimg		/boot		emmc	defaults		defaults
 /dev/logo		/logo		emmc	defaults		flags=display="Logo";backup=1
 /dev/misc		/misc		emmc	defaults		defaults
-#/dev/nvram		/nvram		emmc	defaults		flags=display="Nvram";backup=1
+/dev/nvram		/nvram		emmc	defaults		flags=display="Nvram";backup=1
 /dev/recovery		/recovery	emmc	defaults		defaults
-/dev/uboot		/uboot		emmc	defaults		defaults
 /dev/block/mmcblk0p5	/system		ext4	defaults		defaults
 /dev/block/mmcblk0p6	/cache		ext4	defaults		defaults
 /dev/block/mmcblk0p7	/data		ext4	defaults		defaults
