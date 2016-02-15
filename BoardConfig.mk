@@ -30,9 +30,7 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 # Recovery (Basic config)
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/recovery.fstab
 TARGET_RECOVERY_INITRC := $(LOCAL_PATH)/recovery/init.rc
-
-# TWRP Recovery
-
+TARGET_PREBUILT_RECOVERY_KERNEL := $(LOCAL_PATH)/kernel
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
