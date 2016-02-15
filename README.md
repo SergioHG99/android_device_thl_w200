@@ -5,11 +5,11 @@ By the moment can't install with CWM automade 08.08.2013 02:33:15, maybe a insta
 -----
 ###HOW TO START A SUCCESSFUL BUILD
 
-Get prebuilt apps directory :
+Get prebuilt apps directory (ONLY CM11 OR LESS):
 
     cd ~/android/system/vendor/cm
 
-Prebuilt :
+Prebuilt (ONLY CM11 OR LESS):
 
     ./get-prebuilts
 
