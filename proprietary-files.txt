@@ -57,6 +57,37 @@ etc/firmware/mt6628/mt6628_fm_v4_patch.bin
 etc/firmware/mt6628/mt6628_fm_v5_coeff.bin
 etc/firmware/mt6628/mt6628_fm_v5_patch.bin
 
+#PERMISSIONS/*
+etc/permissions/android.hardware.bluetooth.xml
+etc/permissions/android.hardware.camera.xml
+etc/permissions/android.hardware.faketouch.xml
+etc/permissions/android.hardware.location.gps.xml
+etc/permissions/android.hardware.microphone.xml
+etc/permissions/android.hardware.sensor.accelerometer.xml
+etc/permissions/android.hardware.sensor.compass.xml
+etc/permissions/android.hardware.sensor.light.xml
+etc/permissions/android.hardware.sensor.proximity.xml
+etc/permissions/android.hardware.telephony.gsm.xml
+etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml
+etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
+etc/permissions/android.hardware.touchscreen.multitouch.xml
+etc/permissions/android.hardware.touchscreen.xml
+etc/permissions/android.hardware.usb.accessory.xml
+etc/permissions/android.hardware.usb.host.xml
+etc/permissions/android.hardware.wifi.direct.xml
+etc/permissions/android.hardware.wifi.xml
+etc/permissions/android.software.live_wallpaper.xml
+etc/permissions/android.software.sip.voip.xml
+etc/permissions/android.software.sip.xml
+etc/permissions/com.android.location.provider.xml
+etc/permissions/com.google.android.maps.xml
+etc/permissions/com.google.android.media.effects.xml
+etc/permissions/com.google.widevine.software.drm.xml
+etc/permissions/features.xml
+etc/permissions/handheld_core_hardware.xml
+etc/permissions/media_codecs.xml
+etc/permissions/platform.xml
+
 ############
 #    BIN   #
 ############
