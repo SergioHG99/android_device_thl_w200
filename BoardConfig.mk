@@ -36,6 +36,7 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 # Recovery (Basic config)
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/recovery.fstab
 TARGET_RECOVERY_INITRC := $(LOCAL_PATH)/recovery/init.rc
+TARGET_NO_SEPARATE_RECOVERY := true
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
