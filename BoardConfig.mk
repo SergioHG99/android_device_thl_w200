@@ -35,7 +35,7 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 #TARGET_NO_SEPARATE_RECOVERY := true
 # Recovery (Basic config)
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/recovery.fstab
-TARGET_RECOVERY_INITRC := $(LOCAL_PATH)/recovery/init.rc
+TARGET_RECOVERY_INITRC := $(LOCAL_PATH)/recovery/init.recovery.rc
 TARGET_NO_SEPARATE_RECOVERY := true
 
 # Bluetooth
