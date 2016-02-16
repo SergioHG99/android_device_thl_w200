@@ -34,6 +34,7 @@ TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/recovery.fstab
 TARGET_RECOVERY_INITRC := $(LOCAL_PATH)/recovery/init.rc
 TARGET_NO_SEPARATE_RECOVERY := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/mt_usb/gadget/lun%d/file
+TARGET_PREBUILT_RECOVERY_KERNEL := $(LOCAL_PATH)/kernel
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
