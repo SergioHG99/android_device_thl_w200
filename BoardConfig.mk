@@ -14,7 +14,9 @@ TARGET_CPU_VARIANT := cortex-a7
 ARCH_ARM_HAVE_TLS_REGISTER := true
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/ThL/hlte
+TARGET_KERNEL_CONFIG := e960
+TARGET_KERNEL_SELINUX_CONFIG := selinux_defconfig
+TARGET_KERNEL_SOURCE := kernel/ThL/kernel
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 
 # Prebuilt Kernel
