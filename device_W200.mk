@@ -36,9 +36,9 @@ $(foreach cf,$(unique_product_copy_files_pairs), \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel \
-#    $(LOCAL_KERNEL)/recovery/recovery.fstab:recovery/root/etc/recovery.fstab \
-# Bottom is not really commented (Github Bug)
-     $(LOCAL_KERNEL)/recovery/init.rc:recovery/root/etc/init.rc
+    $(LOCAL_PATH)/recovery/recovery.fstab:recovery/root/etc/recovery.fstab \
+    $(LOCAL_PATH)/recovery/init.rc:recovery/root/etc/init.rc \
+    $(LOCAL_PATH)/recovery/init.usb.rc:recovery/root/etc/init.usb.rc 
 
 
 # Boot animation
