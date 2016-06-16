@@ -9,11 +9,11 @@ I can build to cm-10.2
 
 I can build to cm-11
 
--cm-12.0 not tested
+- cm-12.0: not tested
 
-I can't build cm-12.1 because it tells that android_runtime dont exists.
+I can't build cm-12.1 because it tells that android_runtime doesn't exists.
 
--cm-13.0 not tested
+- cm-13.0: not tested
 
 -----
 ###HOW TO START A SUCCESSFUL BUILD
