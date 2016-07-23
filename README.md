@@ -1,4 +1,4 @@
-# android_device_thl_w200
+# Android_device_thl_w200
 It builds but not sure yet if it boots maybe a problem with partitions?
 By the moment can't install with CWM automade 08.08.2013 02:33:15, maybe a instalation could be performed on TWRP.
 
