@@ -1,9 +1,24 @@
 # mount point	fstype    device    	[device2]
 
-/boot    	emmc		/dev/bootimg
-/cache		ext4		/dev/block/mmcblk0p4
-/data		ext4		/dev/block/mmcblk0p5
-/recovery	emmc		/dev/recovery
-/emmc		vfat		/dev/block/mmcblk0p6
-/system		ext4		/dev/block/mmcblk0p3
-/sdcard		vfat		/dev/block/mmcblk1p1	/dev/block/mmcblk1
+/mbr        mmcblk0
+/ebr1       mmcblk0p1
+/pmt        mmcblk0
+/pro_info       mmcblk0
+/nvram        mmcblk0
+/protect_f   ext4    mmcblk0p2    /protect_f
+/protect_s    ext4    mmcblk0p3   /protect_s
+/seccfg       mmcblk0
+/uboot        mmcblk0
+/bootimg        mmcblk0
+/recovery       mmcblk0
+/sec_ro       mmcblk0p4
+/misc       mmcblk0
+/logo       mmcblk0
+/ebr2       mmcblk0
+/expdb        mmcblk0
+/android    ext4    mmcblk0p5   /system
+/cache    ext4    mmcblk0p6   /cache
+/usrdata    ext4    mmcblk0p7   /data
+/fat        mmcblk0p8
+/bmtpool        mmcblk0
+
